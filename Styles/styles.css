@@ -1,3 +1,4 @@
+/* Navigation Styles in Blog Page */
 nav > ul > li {
   display: inline;
   margin-right: 15px;
@@ -10,4 +11,14 @@ nav li > a {
 footer {
   margin-top: 30px;
   text-align: center;
+}
+
+
+/* Table Styles in Table Page */
+td, th{
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+table{
+  border-collapse: collapse;
 }
