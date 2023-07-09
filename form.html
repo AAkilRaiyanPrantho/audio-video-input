@@ -1,19 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-</head>
-<body>
-    <header>
-        
-    </header>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
     <main>
+      <section>
+        <h2 style="text-align: center">Welcome to Hotel Paramount</h2>
+        <h4 style="text-align: center">Please Fill Up The Form to Check-In</h4>
+        <form>
+          <label for="name"
+            >Full Name:
+            <input id="name" type="text" placeholder="Your Name" />
+          </label>
+          <label for="mail"
+            >E-mail: <input type="email" placeholder="Your Email" id="mail"
+          /></label>
 
+          <label for="address"
+            >Address:
+            <input type="text" placeholder="Your Address" id="address" />
+          </label>
+          <label for="phone"
+            >Phone No:
+            <input type="number" placeholder="Your Phone No." id="phone" />
+          </label>
+          <fieldset>
+            <legend style="text-align: center">Pick Room Type</legend>
+            <label for="Suite">
+              <input type="radio" name="room" id="Suite" />
+              Suite
+            </label>
+            <label for="Single-bed"
+              ><input type="radio" name="room" id="Single-bed" />
+              Single-bed</label
+            >
+            <label for="Double-bed"
+              ><input type="radio" name="room" id="Double-bed" />
+              Double-bed</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend style="text-align: center">
+              Hotel Services
+            </legend>
+              <label for="breakfast">
+                <input type="checkbox" name="h-services" id="breakfast" />BreakFast
+              </label>
+              <label for="lunch">
+                <input type="checkbox" name="h-services" id="lunch" />Lunch</label>
+              <label for="dinner">
+                <input type="checkbox" name="h-services" id="dinner" />Dinner</label>
+              <label for="s-pool">
+                <input type="checkbox" name="h-services" id="s-pool" />Swimming Pool</label>
+              <label for="spa">
+                <input type="checkbox" name="h-services" id="spa" />Spa</label>
+              <label for="laundry">
+                <input type="checkbox" name="h-services" id="laundry" />Laundry</label>
+            </fieldset>
+            <fieldset>
+                <legend style="text-align: center">Any Requests?</legend>
+                <label for="requests">
+                    <textarea name="" id="requests" cols="100" rows="15"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+      </section>
     </main>
-    <footer>
-        
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
