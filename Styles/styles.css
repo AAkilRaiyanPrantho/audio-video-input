@@ -1,13 +1,37 @@
 /* Navigation Styles in Blog Page */
-nav > ul > li {
-  display: inline;
+nav > ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
   margin-right: 15px;
+  padding: 5px;
 }
 
-nav li > a {
+nav li a{
   text-decoration: none;
+  color: black;
 }
 
+nav li:hover{
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+/* Nested Menu Styles */
+
+nav li .dropdown{
+  display: none;
+  position: absolute;
+  background-color: rgb(85, 243, 195);
+  padding-left: 10px;
+}
+
+nav li:hover > .dropdown{
+  display: block;
+}
+
+/* Footer Designs */
 footer {
   margin-top: 30px;
   text-align: center;

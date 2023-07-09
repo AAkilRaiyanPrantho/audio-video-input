@@ -3,22 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="Styles/styles.css" />
     <title>Table</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li>
+            <a href="table.html">Table</a>
+            <ul class="dropdown">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="table.html">Table </a></li>
+              <li><a href="form.html">Form</a></li>
+            </ul>
+          </li>
+          <li><a href="form.html">Form</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <h1>HTML Table</h1>
       <table>
-        <caption>Technology Kings</caption>
+        <caption>
+          Technology Kings
+        </caption>
         <thead>
-            <tr>
-                <th>No.</th>
-                <th>Name</th>
-                <th>Position</th>
-                <th>Salary</th>
-            </tr>
+          <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+          </tr>
         </thead>
         <tbody>
           <tr>
@@ -47,10 +66,10 @@
           </tr>
         </tbody>
         <tfoot>
-            <tr>
-                <td colspan="2">Total Person(s): 4</td>
-                <td colspan="2">Total Income: $4600</td>
-            </tr>
+          <tr>
+            <td colspan="2">Total Person(s): 4</td>
+            <td colspan="2">Total Income: $4600</td>
+          </tr>
         </tfoot>
       </table>
 
