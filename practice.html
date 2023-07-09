@@ -9,6 +9,13 @@
       label {
         display: block;
       }
+      td, th{
+        border: 1px solid grey;
+        padding: 10px;
+      }
+      table{
+        border-collapse: collapse;
+      }
     </style>
   </head>
   <body>
@@ -69,9 +76,54 @@
       <!-- Practice Task 2 Ends -->
 
       <!-- Practice Task 3 Starts -->
-        
+        <h2>DK Cricket Tournament</h2>
+        <caption>Tournament Schedule and Results</caption>
+        <table>
+            <thead>
+                <tr>
+                    <th>Match No.</th>
+                    <th>Home Team</th>
+                    <th>Away Team</th>
+                    <th>Winner</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Khulna</td>
+                    <td>Chittagong</td>
+                    <td>Khulna</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <th>CANCELLED</th>
+                    <th>CANCELLED</th>
+                    <th>CANCELLED</th>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Rajshahi</td>
+                    <td>Dhaka</td>
+                    <td>Dhaka</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Sylhet</td>
+                    <td>Barisal</td>
+                    <td>Barisal</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total Matches: 3</td>
+                    <td colspan="2">Most Team Won: Away</td>
+                </tr>
+            </tfoot>
+        </table>
       <!-- Practice Task 3 Ends -->
     </main>
-    <footer></footer>
+    <footer style="text-align: center;margin: 20px;">
+        &copy; 2023 All Rights Reserved
+    </footer>
   </body>
 </html>
